@@ -1,0 +1,229 @@
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+/* font results */
+#score{
+    font-size: 3rem;
+}
+.color1{
+    color:hsl(221, 100%, 96%) ;
+}
+
+#total-score{
+    font-size: 11px;
+}
+.color2{
+    color: hsl(241, 100%, 89%);
+}
+
+.color3{
+    color:hsl(241, 100%, 89%) ;
+}
+#scoreText{
+    width: 47%;
+    font-size: 11px;
+}
+/* font summary */
+#summary-title{
+    font-weight: bold;
+    color:hsl(224, 30%, 27%);
+}
+
+#reaction{
+    color: hsl(0, 100%, 67%);
+}
+
+#memory{
+    color: hsl(39, 100%, 56%);
+}
+
+#verbal{
+    color: hsl(166, 100%, 37%);
+}
+
+#visual{
+    color: hsl(234, 85%, 45%);
+}
+
+.summary-score{
+    margin-right: 5px;
+    font-weight: bold;
+    color:hsl(224, 30%, 27%);
+}
+.summary-total{
+    color:hsl(241, 100%, 89%);
+}
+/* body and main */
+body{
+    background-color:hsl(0, 0%, 100%);
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+}
+
+/* results-section */
+.results-section{
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 25px;
+ }
+
+.results{
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) );
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+    height: 115px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* summary-section */
+ .summary-section{
+    background-color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 25px 25px 0;
+ }
+
+ 
+
+#summary{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.grid-div{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    border-radius: 12px;
+}
+
+.summary-span-design{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 44px;
+}
+
+.design-reaction{
+    background-color: hsla(0, 100%, 67%, 0.1 );
+}
+.design-memory{
+    background-color: hsla(39, 100%, 56%, 0.1 );
+}
+.design-verbal{
+    background-color: hsla(166, 100%, 37%, 0.1 );
+}
+.design-visual{
+    background-color: hsla(234, 85%, 45%, 0.1 );
+}
+
+
+
+/* button */
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    margin-top: 15px;
+    padding: 10px 72px;
+    border-radius: 23px;
+}
+
+.colors {
+    color: hsl(0, 100%, 67%);
+    color: hsl(39, 100%, 56%);
+    color: hsl(166, 100%, 37%);
+    color: hsl(234, 85%, 45%);
+
+
+    color: hsl(252, 100%, 67%);
+    color: hsl(241, 81%, 54%);
+
+    color: hsla(256, 72%, 46%, 1);  
+    color: hsla(241, 72%, 46%, 0);
+
+
+    color: hsl(0, 0%, 100%);
+    color: hsl(221, 100%, 96%);
+    color: hsl(241, 100%, 89%);
+    color: hsl(224, 30%, 27%);
+}
+
+
+
+#btn{
+    background-color: hsl(224, 30%, 27%);;
+}
+
+@media screen and (max-width: 1064px) {
+    main{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 95%;
+    }
+    .results-section{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 0px 25px 25px;
+    }
+    .summary-section{
+        width: 100%;
+        height: 100%;
+    }
+    .attribution{
+        position: absolute;
+        bottom:  0;
+    }
+}
+
+ 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="results-section">
+
+
+      <span class="color3">Your Result</span>
+      <div id="results" class="results">
+        <h1 class="color1" id="score">76</h1>
+        <span class="color2" id="total-score">of 100</span>
+      </div>
+      <h2 class="color1">Great</h2>
+      <p id="scoreText" class="color3">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+
+
+    <section class="summary-section">
+      <div class="summary-inner-container">
+        <div id="summary" class="summary">
+          <span id="summary-title">Summary</span>
+
+          <div class="design-reaction grid-div">
+            <div>
+              <img src="assets/images/icon-reaction.svg" alt="Reaction">
+              <span id="reaction">Reaction</span>
+            </div>
+            <span class="summary-span-design">
+              <span class="summary-score">80</span>
+              <span class="summary-total">/ 100</span>
+            </span>
+          </div>
+
+          <div class="design-memory grid-div">
+            <div>
+              <img src="assets/images/icon-memory.svg" alt="Memory">
+              <span id="memory">Memory</span>
+            </div>
+            <span class="summary-span-design">
+              <span class="summary-score">92</span>
+              <span class="summary-total">/ 100</span>
+            </span>
+          </div>
+
+          <div class="design-verbal grid-div">
+            <div>
+              <img src="assets/images/icon-verbal.svg" alt="Verbal">
+              <span id="verbal">Verbal</span>
+            </div>
+            <span class="summary-span-design">
+              <span class="summary-score">61</span>
+              <span class="summary-total"> / 100</span>
+            </span>
+          </div>
+
+          <div class="design-visual grid-div">
+            <div>
+              <img src="assets/images/icon-visual.svg" alt="Visual">
+              <span id="visual">Visual</span>
+            </div>
+            <span class="summary-span-design">
+              <span class="summary-score">72</span>
+              <span class="summary-total">/ 100</span>
+            </span>
+          </div>
+
+        </div>
+        <div class="btn-container">
+          <button class="color1" id="btn">Continue</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Mario Ortega</a>.
+  </div>
+</body>
+
+</html>
