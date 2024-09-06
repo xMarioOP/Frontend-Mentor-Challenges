@@ -1,0 +1,174 @@
+/* variables */
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+    --monserrat: "Montserrat", sans-serif;
+    --fraunces: "Fraunces", sans-serif;
+
+    --sm: 11px;
+    --md: 13px;
+    --lg: 18px;
+}
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+#img-perfum-mobile {
+    display: none;
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* main-container */
+.main-container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+
+/* inner-container */
+.inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    background-color: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* product-img */
+#img-perfum-deskopt {
+    width: 100%;
+    height: 100%;
+}
+
+/* product-description */
+.product-description {
+    display: grid;
+    padding: 25px 20px  ;
+    align-items: stretch;
+    justify-content: center;
+    align-content: space-around;
+}
+
+#perfume {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--monserrat);
+    font-size: var(--sm);
+    letter-spacing: 5px;
+}
+
+.product-description-title {
+    font-family: var(--fraunces);
+    color: var(--Very-dark-blue);
+    line-height: 30px;
+}
+
+.product-description-description {
+    font-family: var(--monserrat);
+    font-size: var(--md);
+    color: var(--Dark-grayish-blue);
+}
+
+/* product-description-prices */
+.product-description-prices {
+    display: flex;
+    align-items: center;
+}
+
+.price-full {
+    color: var(--Dark-cyan);
+    font-family: var(--fraunces);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.price-discount {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--fraunces);
+    text-decoration: line-through;
+    font-size: var(--sm);
+    margin-left: 15px;
+}
+
+/* button */
+.btn {
+    display: flex;
+    align-items: center;
+    background: var(--Dark-cyan);
+    justify-self: center;
+    color: var(--White);
+    border: none;
+    font-weight: bold;
+    padding: 15px 55px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover{
+    background: hsl(158, 56%, 17%);
+}
+
+.btn>div {
+    display: flex;
+    align-items: end;
+}
+
+.btn img {
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 514px) {
+    #img-perfum-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #img-perfum-deskopt {
+        display: none;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90vh;
+        background-color: var(--White);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .product-description {
+        height: 100vh;
+        display: flex;
+        padding: 25px;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+}
